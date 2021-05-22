@@ -1,0 +1,47 @@
+body{
+    border:0%;
+    padding: 0%;
+    background-color: rgb(255, 189, 65);
+}
+#nav{
+    position: relative;
+    width: 98vw;
+    height: 12vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    left:1vh;
+    top:1vh;
+    box-shadow: 3px 3px 5px rgba(71, 71, 71, 0.712);
+}
+#brand{
+    position: relative;
+    top:30%;
+    font-family: 'Montserrat Alternates';
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(95, 97, 100);
+}
+#map{
+    position: absolute;
+    bottom:0%;
+    left: 0vw;
+}
+
+table{
+    width :100vw;
+    border-collapse: collapse;
+}
+table,th,td{
+    border: 1px solid rgb(114, 114, 114);
+    background-color: rgb(255, 255, 255);
+    
+}
+td{   
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+}
+#clearbutton{
+position:absolute;
+right: 10%;
+bottom: 35%;
+}
