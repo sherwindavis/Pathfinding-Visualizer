@@ -1,7 +1,7 @@
 body{
     border:0%;
     padding: 0%;
-    background-color: rgb(255, 189, 65);
+    background-color: #FFE169;
 }
 #nav{
     position: relative;
@@ -19,7 +19,7 @@ body{
     font-family: 'Montserrat Alternates';
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(95, 97, 100);
+    color: #1D1E4E;
 }
 #map{
     position: absolute;
@@ -32,7 +32,7 @@ table{
     border-collapse: collapse;
 }
 table,th,td{
-    border: 1px solid rgb(114, 114, 114);
+    border: 0px solid #2F3180;
     background-color: rgb(255, 255, 255);
     
 }
@@ -44,4 +44,8 @@ td{
 position:absolute;
 right: 10%;
 bottom: 35%;
+}
+#maze1{
+    position: absolute;
+    right: 40vw;
 }
