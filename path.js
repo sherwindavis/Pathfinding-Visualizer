@@ -7,7 +7,7 @@ for (var i = 0; i <=1500; i++) {
     nodes[i] = [];
 }
 nodeconnection();
-console.log(nodes)
+
 create();
 function create(){
     var cellno=1;
@@ -61,10 +61,13 @@ return;
 }
 
 function clearvisualizer(){
-    for(let i=1;i<=1500;i++){            
-            var finder=document.getElementById(i);
-            finder.style.backgroundColor="white";             
-              nodeconnection();
+    let y=1;
+    nodeconnection();
+    while(y<=1500){
+            let cells=document.getElementById(y);
+            cells.style.backgroundColor="white";             
+            console.log("waddup")
+            y++;
     }
 }
 
@@ -76,19 +79,18 @@ function sleep(ms) {
 async function maze(){
     clearvisualizer();
     for(let i=1;i<=1500;i++){  
-    if(i<=60 || i%60==0 || i>=1440){
+    if(i<=60 || i%60==0 || i>=1440)    
+    {
         if(i!=1 && i%60!=0){
         clicky(i-1);  
         }        
-        else if(i!=1 && i%60==0 && i<1440){
-            clicky(i+1);  
+        if(i!=1 && i%60==0 && i<1440){
+            clicky(i+1);   
             }
-            await sleep(10);
-       clicky(i);
-         
+            clicky(i);
     }   
     }
-    console.log(nodes)
+    
 }
 
 function nodeconnection(){
@@ -103,8 +105,4 @@ else{
 }
 }
 }
-}
-
-async function visualizer(y){
-
 }
